@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Quizzes</title>
-	<link rel="stylesheet" type="text/css" href="estilo_quiz.css">
+	<title>Crie | Revolut</title>
+	<link rel="stylesheet" type="text/css" href="create.css">
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&display=swap" rel="stylesheet">
@@ -11,7 +11,6 @@
 	<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@700;800&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-</head>
 </head>
 <body>
 	<nav>
@@ -22,8 +21,7 @@
             Revolut
          </div>
          <div class="nav-items">
-            <li><a href="create.html">+</a></li>
-            <li><a href="perfil.html">Perfil</a></li>
+            <li><a href="perfil.html"><i class="fa fa-user" aria-hidden="true"></i></a></li>
          </div>
          <div class="search-icon">
             <span class="fas fa-search"></span>
@@ -36,7 +34,7 @@
             <button type="submit" class="fas fa-search"></button>
          </form>
       </nav>
-      <script>
+       <script>
          const menuBtn = document.querySelector(".menu-icon span");
          const searchBtn = document.querySelector(".search-icon");
          const cancelBtn = document.querySelector(".cancel-icon");
@@ -62,52 +60,39 @@
            cancelBtn.classList.add("show");
          }
       </script>
-    <h1>Categorias</h1>
-    <div class="row">
-  <div class="column">
-    <div class="card">
-    	<h2>Matematica</h2>
-    	<p>Teste seus conhecimentos</p>
-    </div>
-  </div>
-  <div class="column">
-    <div class="card">
-    	<h2>Geografia</h2>
-    	<p>Teste seus conhecimentos</p>
-    </div>
-  </div>
-  <div class="column">
-    <div class="card">
-    	<h2>Historia</h2>
-    	<p>Teste seus conhecimentos</p>
-    </div>
-  </div>
-  <div class="column">
-    <div class="card">
-    	<h2>Portugues</h2>
-    	<p>Teste seus conhecimentos</p>
-    </div>
-  </div>
-</div>
+	<div class="contente">
+		<h1>Crie um quiz</h1>
+	<input class="inpt"type="name" placeholder="Nome..."><br>
+	<input  class="inpt" type="text" placeholder="Descrição..."><br>
+	<h1>Pergunta</h1>
+	<input  class="inpt" type="name" placeholder="Digite a pergunta"><br>
+	<input class="um" placeholder="Alternativa 1"><br>
+	<input class="dois" placeholder="Alternativa 2"><br>
+	<input class="tres" placeholder="Alternativa 3"><br>
+	<input class="quatro" placeholder="Alternativa 4"><br>
+	<h1>Clique na correta</h1>
+	<label class="container">Um
+  <input type="checkbox">
+  <span class="checkmark"></span>
+</label>
 
-    <h1>Mais populares<i class="fa fa-fire"></i></h1>
-    <div class="card_game">
-    	<h3>Mat</h3>
-    	<p>Voce sabe matematica?</p>
-    </div>
-     <div class="card_game">
-    	<h3>Geog</h3>
-    	<p>Voce sabe geografia?</p>
-    </div>
-     <div class="card_game">
-    	<h3>His</h3>
-    	<p>Voce sabe historia?</p>
-    </div>
-     <div class="card_game">
-    	<h3>Port</h3>
-    	<p>Voce sabe portugues?</p>
-    </div>
-    <footer class="pe">
+<label class="container">Dois
+  <input type="checkbox">
+  <span class="checkmark"></span>
+</label>
+
+<label class="container">Tres
+  <input type="checkbox">
+  <span class="checkmark"></span>
+</label>
+
+<label class="container">Quatro
+  <input type="checkbox">
+  <span class="checkmark"></span>
+</label><br>
+	<button class="linkar">Adicionar</button>
+	</div>
+	 <footer class="pe">
     	<p>2022 MAZE SOFTWARE INC.</p>
     </footer>
 </body>
